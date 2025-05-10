@@ -14,7 +14,7 @@ while True:
     if i == '1':
         t = 'neutral'
     elif i == '2':
-        t = 'more_neutral'
+        t = 'neutral'  # Fix: use 'neutral' for 'more_neutral' too
     else:
         print("Invalid choice selected. Defaulting to 'neutral'.")
         t = 'neutral'
@@ -26,8 +26,6 @@ while True:
 
     print("\nHere's a joke for you:\n")
     print(f"{j}\n")
-
-    print("Jokes these days are getting easily offensive. So none for you now")
 
     u = input("\nWant more programming jokes? (yes/no): ").strip().lower()
     if u != 'yes':
